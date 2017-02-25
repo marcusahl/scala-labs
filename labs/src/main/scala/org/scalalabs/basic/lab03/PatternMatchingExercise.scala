@@ -48,15 +48,15 @@ object PatternMatchingExercise {
    */
 
   val pf1: PartialFunction[String, String] = {
-    case _ => error("fix me")
+    case _ ⇒ error("fix me")
   }
 
   val pf2: PartialFunction[String, String] = {
-    case _ => error("fix me")
+    case _ ⇒ error("fix me")
   }
 
   val pf3: PartialFunction[String, String] = {
-    case _ => error("fix me")
+    case _ ⇒ error("fix me")
   }
 
 }

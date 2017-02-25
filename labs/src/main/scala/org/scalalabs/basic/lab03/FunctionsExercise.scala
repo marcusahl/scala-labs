@@ -39,7 +39,7 @@ object FunctionsExercise02 {
     x + y
   }
 
-  def using[A <: { def close(): Unit }, B](closable: A)(f: A => B): B = {
+  def using[A <: { def close(): Unit }, B](closable: A)(f: A ⇒ B): B = {
     error("fix me")
   }
 }

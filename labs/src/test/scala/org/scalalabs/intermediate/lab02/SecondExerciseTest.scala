@@ -24,7 +24,7 @@ class SecondExerciseTest extends JUnitSuite {
     val xml = XML.load(this.getClass.getResourceAsStream(xmlFileName))
     val friends = xml \\ "user"
 
-    friends.toList.map(s => TwitterUser(s))
+    friends.toList.map(s ⇒ TwitterUser(s))
   }
 
   // ========================================================================

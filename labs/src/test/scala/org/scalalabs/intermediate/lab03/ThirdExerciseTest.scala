@@ -41,8 +41,7 @@ class ThirdExerciseTest extends JUnitSuite {
 
   val testAuthInfo = new TwitterAuthInfo(
     oauthAccessToken = "66988471-6UejYlvm65JNG9DW5JRmpmTwE6X90Pyyzx3RbJEjf",
-    oauthTokenSecret = "VMuNpQ7YZGCtoojtEBxoROj0bdEQFlzZrD6j6tbk"
-  )
+    oauthTokenSecret = "VMuNpQ7YZGCtoojtEBxoROj0bdEQFlzZrD6j6tbk")
 
   // ========================================================================
   // The tests

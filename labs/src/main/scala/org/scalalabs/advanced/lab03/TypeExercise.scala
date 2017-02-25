@@ -33,7 +33,7 @@ object ComboMeal {
    * T <: U means that T must be a subtype of U.
    */
   case class Builder[HAS_BURGER <: Option[String], HAS_BEVERAGE <: Option[Size], HAS_SIDEORDER <: Option[String]] private[ComboMeal] (burger: HAS_BURGER, bev: HAS_BEVERAGE, sideOrder: HAS_SIDEORDER) {
-    def ~[X](f: Builder[HAS_BURGER, HAS_BEVERAGE, HAS_SIDEORDER] => X): X = f(this)
+    def ~[X](f: Builder[HAS_BURGER, HAS_BEVERAGE, HAS_SIDEORDER] ⇒ X): X = f(this)
   }
 
   /**
@@ -125,7 +125,7 @@ object Combo {
   case object None extends None
 
   case class Builder[HAS_BUR <: Option[String], HAS_BEV <: Option[String], HAS_SIDE <: Option[String]] private[Combo] (burger: HAS_BUR, bev: HAS_BEV, side: HAS_SIDE) {
-    def ~[X](f: Builder[HAS_BUR, HAS_BEV, HAS_SIDE] => X): X = f(this)
+    def ~[X](f: Builder[HAS_BUR, HAS_BEV, HAS_SIDE] ⇒ X): X = f(this)
   }
 }
 
@@ -144,7 +144,7 @@ object FoodExercise {
    * The Mamal trait should be implemented so that the joinDinnerWith method only compiles
    * if two mamals eat exactly the same type of foo.d
    */
-  trait Mamal { self =>
+  trait Mamal { self ⇒
     val eats: Food
 
     /**

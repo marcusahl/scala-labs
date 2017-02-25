@@ -43,7 +43,7 @@ object ListManipulationExercise02 {
     var validBoyNames: ListBuffer[String] = new ListBuffer[String]()
     var validMenNames: ListBuffer[String] = new ListBuffer[String]()
 
-    for (person <- persons) {
+    for (person ← persons) {
       if (person.age < 18) {
         boys += person
       } else {
@@ -54,10 +54,10 @@ object ListManipulationExercise02 {
     var sortedBoys = boys.toList.sortBy(_.age)
     var sortedMen = men.toList.sortBy(_.age)
 
-    for (boy <- sortedBoys) {
+    for (boy ← sortedBoys) {
       validBoyNames += boy.firstName
     }
-    for (man <- sortedMen) {
+    for (man ← sortedMen) {
       validMenNames += man.firstName
     }
     List(validBoyNames.toList, validMenNames.toList)
